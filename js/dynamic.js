@@ -92,9 +92,32 @@
 	$('.services > div:nth-child(3n+2)').css({'background': '#ffa100 url(./images/service2_bg.png) no-repeat 28px 9px'});
 	$('.services > div:nth-child(3n+3)').css({'background': '#3c60b1 url(./images/service3_bg.png) no-repeat 19px -19px'});
 	$('.services > div:nth-child(3n+1) button').css({'background': '#6c8606'});
-	$('.services > div:nth-child(3n+1) button:hover').css({'background': '#5e7504'});
+	$('.services > div:nth-child(3n+1) button').hover(
+		function() {
+			$(this).css({'background': '#5e7504'});
+		},
+		function() {
+			$(this).css({'background': '#6c8606'});
+		}
+	);
 	$('.services > div:nth-child(3n+2) button').css({'background': '#ff6000'});
-	$('.services > div:nth-child(3n+2) button:hover').css({'background': '#cf4900'});
+	$('.services > div:nth-child(3n+2) button').hover(
+		function() {
+			$(this).css({'background': '#cf4900'});
+		},
+		function() {
+			$(this).css({'background': '#ff6000'});
+		}
+	);
 	$('.services > div:nth-child(3n+3) button').css({'background': '#2f9af5'});
-	$('.services > div:nth-child(3n+3) button:hover').css({'background': '#2786de'});
+	$('.services > div:nth-child(3n+3) button').hover(
+		function() {
+			$(this).css({'background': '#2786de'});
+		},
+		function() {
+			$(this).css({'background': '#2f9af5'});
+		}
+	);
+	$('.about > div:nth-child(2n)').css({'padding': '42px 0 0 310px'});
+	$('.about > div:nth-child(2n) > div').css({'float': 'left', 'margin': '-22px 0 0 -310px'});
 });
